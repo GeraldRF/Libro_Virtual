@@ -14,3 +14,15 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/legends/get-upload/{url}', 'LegendController@getUpload');
+
+Route::get('/', function(){
+
+  return "Hello";
+
+});
+
+Route::get('/home', function(){
+
+      return view('welcome');
+
+});
